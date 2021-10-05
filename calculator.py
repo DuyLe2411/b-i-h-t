@@ -63,9 +63,11 @@ frame1.pack(fill='x')
 
 
 def AC_button(widget):
-    global first_number, second_number
+    global first_number, second_number,operator
     widget.delete(0,'end')
-
+    first_number = ''
+    second_number = ''
+    operator = ''
 
 #DÒNG ĐẦU
 button1 = Button(master=frame1,text='AC',width=5,height=2,bg="brown",fg='white' ,pady=10,command=lambda: AC_button(txt_display))
